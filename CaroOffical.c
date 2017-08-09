@@ -1,4 +1,4 @@
- #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
@@ -62,9 +62,9 @@ void printboard(int board[SIZE][SIZE]) {
             	TextColor(cl);
 			}
         	else if (board[i][j]==2) {
-  				TextColor(252);
-	          	printf("O");
-				TextColor(cl);    		
+  			TextColor(252);
+	         	printf("O");
+			TextColor(cl);    		
 			}
         	else
             	printf("_");
@@ -74,7 +74,7 @@ void printboard(int board[SIZE][SIZE]) {
 }
 
 void askPlayer (int player) {
-	TextColor(14);
+    TextColor(14);
     gotoxy(SIZE*2+4,5);printf("Press o to end game.\n");
     gotoxy(SIZE*2+4,6);
     if (player%2!=0) {
